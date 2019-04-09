@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import logo from '../logo.svg';
 import '../styles/App.css';
+import CreateLink from './CreateLink'
 import LinkList from './LinkList'
 
 class App extends Component {
@@ -22,7 +23,10 @@ class App extends Component {
       //     </a>
       //   </header>
       // </div>
-      <LinkList />
+      <Fragment>
+        <CreateLink />
+        <LinkList />
+      </Fragment>
     );
   }
 }
